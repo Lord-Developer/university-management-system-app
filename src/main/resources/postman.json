@@ -1,0 +1,484 @@
+{
+  "info": {
+    "_postman_id": "a65d615f-645a-4fc0-ae7d-c5d0a5c837e1",
+    "name": "university-management-system-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "university",
+      "item": [
+        {
+          "name": "Create",
+          "id": "3fa1fe61-8441-4952-bed6-328ff4a0ee9c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Singapur University\",\r\n    \"city\": \"Tashkent\",\r\n    \"district\": \"Chilonzor\",\r\n    \"street\": \"John Cena\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/university"
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "id": "53a19c51-ecf1-4461-ab4e-1dc8b7d9c7de",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/university/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "c89c0a27-7084-4920-8545-3fd34819af76",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Westminister University\",\r\n    \"city\": \"Tashkent\",\r\n    \"district\": \"Olmazor\",\r\n    \"street\": \"Joe Biden\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/university/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "11275ef3-621c-4a82-97a0-0fbb25638b77",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/university"
+          },
+          "response": []
+        }
+      ],
+      "id": "afee59b3-5051-42a5-a16e-b1cebc593ba3"
+    },
+    {
+      "name": "faculty",
+      "item": [
+        {
+          "name": "Create",
+          "id": "21592b3d-1091-4e9d-864c-8eec5a6430ef",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Accountant\",\r\n    \"universityId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/faculty"
+          },
+          "response": []
+        },
+        {
+          "name": "GetFacultyGroupsAndNumberOfStudentsById",
+          "id": "e4e3c198-fe4d-414e-98e6-a0e33643263f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/faculty/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "8d888d8b-6387-46b9-876d-e7c4b9838cea",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Accountant\",\r\n    \"universityId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/faculty/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "d291295a-8f29-41c7-8851-cb0893aa7583",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/faculty"
+          },
+          "response": []
+        }
+      ],
+      "id": "aed1f0aa-93b9-4238-819e-6241cfc4a98a"
+    },
+    {
+      "name": "group",
+      "item": [
+        {
+          "name": "Create",
+          "id": "d707a41e-1f75-4dc7-8878-0ce755aa0aa8",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"   MMT-88\",\r\n    \"facultyId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/group"
+          },
+          "response": []
+        },
+        {
+          "name": "GetGroupStudentsById",
+          "id": "6737e502-5654-4a6c-bbe7-61698b940198",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/group/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "074c29a5-6971-4781-826c-0cd2777190dc",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"   MMT-88\",\r\n    \"facultyId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/group/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "46919e39-783e-40d6-801e-a96d733a6eda",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/group"
+          },
+          "response": []
+        }
+      ],
+      "id": "cf26b71a-b180-4d45-97a5-a0fc2ae949ed"
+    },
+    {
+      "name": "journal",
+      "item": [
+        {
+          "name": "Create",
+          "id": "4912146b-f0f3-4454-9f74-36660b6e352e",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"MMT-88\",\r\n    \"groupId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/journal"
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "id": "783b4019-003f-4ec8-a4d9-fa2ea2567f7e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/journal/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "aad0b6fd-1548-411d-bbd1-45d561fbb091",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"MMT-88\",\r\n    \"groupId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/journal/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "499727c5-1c0d-4c83-bb2b-69fa3a6dd181",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/journal"
+          },
+          "response": []
+        }
+      ],
+      "id": "9b2641a8-2094-4547-8284-3cb354de2dd8"
+    },
+    {
+      "name": "subject",
+      "item": [
+        {
+          "name": "Create",
+          "id": "ccac89fb-e614-4cde-ab4c-6db025903659",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Math\",\r\n    \"journalId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/subject"
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "id": "ffc230e1-79de-4a95-be7f-3234a2fcd162",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/subject/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "01c9d8ee-dda6-4f46-8df1-061c42183eae",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Math\",\r\n    \"journalId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/subject/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "c7231274-5fdb-40b1-9e07-ab5b558132d5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/subject"
+          },
+          "response": []
+        }
+      ],
+      "id": "8bb74c69-c336-421c-a88a-d8cc0eb5c7a3"
+    },
+    {
+      "name": "student",
+      "item": [
+        {
+          "name": "Create",
+          "id": "93b39146-2f4d-4863-9de5-bad2b20a1af4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\": \"Kingsly\",\r\n    \"lastName\": \"Coman\",\r\n    \"city\": \"New Yark\",\r\n    \"district\": \"Mark Town\",\r\n    \"street\": \"N-76\",\r\n    \"groupId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/student"
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "id": "320dbe01-4c4e-46f2-858c-ad453ad83673",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/student/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetStudentSubjects",
+          "id": "eb654590-d7ec-4eeb-921f-b6423a8851d7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/student/subjects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetStudentByFirstName",
+          "id": "43379391-b4d3-4d57-91ed-40d90ae09c31",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/student?firstName=kingslY",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "student"
+              ],
+              "query": [
+                {
+                  "key": "firstName",
+                  "value": "kingslY"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "cc745f70-229b-436b-afad-4c61c46fab91",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstName\": \"Kingsly\",\r\n    \"lastName\": \"Coman\",\r\n    \"city\": \"New Yark\",\r\n    \"district\": \"Mark Town\",\r\n    \"street\": \"N-76\",\r\n    \"groupId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/student/1"
+          },
+          "response": []
+        },
+        {
+          "name": "GetList",
+          "id": "829fafb7-95fb-4237-b9e2-3f227b2fb19f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/student"
+          },
+          "response": []
+        }
+      ],
+      "id": "64d5a861-050b-4b91-8ede-c125453e44b6"
+    },
+    {
+      "name": "mark",
+      "item": [
+        {
+          "name": "Create",
+          "id": "25f1e08d-44ac-4ab6-ac27-ac808c78d74c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"mark\": 90,\r\n    \"subjectId\": 1,\r\n    \"studentId\": 1,\r\n    \"journalId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/mark"
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "id": "afd9f290-bd43-48eb-ba68-e7576cc2988e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:8080/api/mark/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "id": "9ac154e6-f51f-4ce6-be24-a9aa6ac14e3f",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"mark\": 80,\r\n    \"subjectId\": 1,\r\n    \"studentId\": 1,\r\n    \"journalId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:8080/api/mark/1"
+          },
+          "response": []
+        }
+      ],
+      "id": "2d241844-539d-49af-b2e0-49e8af7b2b8b"
+    }
+  ]
+}
